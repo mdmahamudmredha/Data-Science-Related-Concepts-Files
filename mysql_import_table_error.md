@@ -1,9 +1,4 @@
-## Problem
-
-![alt text](image.png)
-
----
-
+## Code [Link](https://github.com/mdmahamudmredha/Data-Science-Related-Concepts-Files/blob/main/mysql_import_table_error.ipynb)
 ```python
 with open("sales.csv", "r", encoding="utf-8-sig") as f:
     data = f.read()
