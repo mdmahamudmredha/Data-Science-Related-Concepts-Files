@@ -105,3 +105,38 @@
 | ডিলিট সমস্যা            | আছে                      | নেই                     |
 | স্টোরেজ                 | বেশি লাগে                | কম লাগে                 |
 | সম্পর্ক (Relationship)  | স্পষ্ট নয়                | স্পষ্টভাবে টেবিল লিঙ্কড |
+
+---
+
+তোমার কাছে তিনটা টেবিল আছে:
+
+* **Students** → (StudentID, StudentName, CourseID)
+* **Courses** → (CourseID, CourseName, InstructorID)
+* **Instructors** → (InstructorID, InstructorName)
+
+ এখন তুমি `StudentID = 3` আর `StudentID = 4` এর **Instructor** বের করতে চাও।
+
+তার মানে `Students → Courses → Instructors` এইভাবে **JOIN** করতে হবে।
+
+SQL Query হবে:
+
+```sql
+SELECT 
+    s.StudentID,
+    s.StudentName,
+    c.CourseName,
+    i.InstructorName
+FROM Students s
+JOIN Courses c 
+    ON s.CourseID = c.CourseID
+JOIN Instructors i 
+    ON c.InstructorID = i.InstructorID
+WHERE s.StudentID IN (3, 4);
+```
+ Output হবে (তোমার ডেটার ভিত্তিতে):
+
+| StudentID | StudentName | CourseName | InstructorName |
+| --------- | ----------- | ---------- | -------------- |
+| 3         | Salma       | Math       | Mr. Karim      |
+| 4         | Jamil       | Physics    | Mrs. Afsana    |
+
