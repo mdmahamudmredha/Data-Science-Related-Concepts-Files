@@ -139,7 +139,7 @@ SELECT COUNT(DISTINCT gender) AS UniqueGenders FROM Students;
 
 ---
 
-#  সারাংশ (তুমি যেভাবে ক্লাসে বুঝাতে পারবে)
+#  সারাংশ
 
 * **Basic Column Selection** → ডেটা থেকে কোন কোন কলাম দেখতে চাই তা বেছে নেওয়া যায়।
 * **DISTINCT** → ডুপ্লিকেট বাদ দিয়ে ইউনিক ভ্যালু দেখা যায়।
