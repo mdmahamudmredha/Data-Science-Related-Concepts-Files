@@ -12,6 +12,50 @@
 | 8         | Rafi  | Male   | Math      | 8          | 12           | 5         | 1       | 40    | 10       | 2025-02-24 |
 
 ---
+## 📋 **Questions Based on Dataset**
+
+### 🔢 **Expressions & Calculations**
+
+1. Calculate the **Actual Mark** for each student using the formula:
+   `(CorrectAns * EachQMark) - (IncorrectAns * NegMark)`
+2. Calculate the **Total Price** for each student using:
+   `(Price * Quantity)`
+3. Display student name, actual mark, and a column showing **PASS** if actual mark ≥ 50, otherwise **FAIL**.
+
+---
+
+### 🔍 **Subqueries**
+
+4. Find the student(s) who achieved the **highest actual mark**.
+5. Find all students whose **actual mark is above the class average**.
+6. Find the student(s) who scored the **lowest actual mark**.
+
+---
+
+### 🔤 **String Functions**
+
+7. Display each student's name in **UPPERCASE** and subject in **lowercase**.
+8. Show only the **first 3 characters** of each student's name.
+9. Find the **length of each student's name**.
+10. Concatenate the **Name and Subject** columns in a single column as `FullInfo`.
+
+---
+
+### 📅 **Date/Time Functions**
+
+11. Display the **current date and time**.
+12. For each student, extract the **Year, Month, and Day** from `ExamDate`.
+13. Add **7 days** to each student's `ExamDate` and display as `NextExamDate`.
+
+---
+
+### 🧮 **Math Functions**
+
+14. Round each student's **Actual Mark** to 0 decimal places.
+15. Show the **Ceil** and **Floor** values of `(CorrectAns * EachQMark) / 3`.
+16. Display the **absolute value** of `NegMark` for each student.
+
+
 
 ## ✅ কোন কোন কলামে কোন কাজ করবে
 
